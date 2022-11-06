@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <link rel="stylesheet" href="test.css">  
+
+<body style="text-align:center">
+    
+	<h1>SHAKTHI S (191EE213)</h1>
+	<p>WORKSHOP ASSESSMENT - DAY 1</p>
+    <center><img class="card-img-top" src="https://media.giphy.com/media/l0Exh0jvgGY43qKPe/giphy.gif" alt="Card image cap"></center>
+	<div id="counter">
+		<!-- counts -->
+	</div>
+    <center><p>&#10084;</p></center>
+    <p>likes</p>
+    <center><input placeholder="input" ></center>
+    <center><button class="button">submit</button></center>
+
+	<script>
+		let counts=setInterval(updated);
+		let upto=0;
+		function updated(){
+			var count= document.getElementById("counter");
+			count.innerHTML=++upto;
+			if(upto===1000)
+			{
+				clearInterval(counts);
+			}
+		}
+	</script>
+</body>
+</html>
